@@ -79,4 +79,24 @@
     cursor: pointer;
     z-index: 1001;
   }
-  
+  .gridContainer {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  /* default mobile: 1 kolom */
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  /* tablet ke atas: 3 kolom */
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridItem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}

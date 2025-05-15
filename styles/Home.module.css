@@ -1,0 +1,38 @@
+.container {
+    height: 100vh;
+    background: #000000; /* Warna hitam */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Warna teks putih */
+    text-align: center;
+  }
+  
+  .welcome {
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    color: #ffffff;
+  }
+  
+  .fadeIn {
+    opacity: 1;
+  }
+  
+  .button {
+    margin-top: 30px;
+    background: #ffffff;
+    color: #000000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background: #dddddd;
+    transform: scale(1.05);
+  }
+  

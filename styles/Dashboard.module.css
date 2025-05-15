@@ -1,0 +1,103 @@
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navLink {
+  color: #39a1f0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 10px; /* padding kiri kanan lebih kecil supaya timeline bisa lebar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%; /* ubah dari 600px jadi full lebar */
+  width: 100%; /* penuh lebar container */
+  padding-left: 60px; /* tetap ada ruang untuk garis timeline */
+  box-sizing: border-box;
+}
+
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #39a1f0;
+  border-radius: 2px;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+
+.circle {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background: #39a1f0;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-sizing: content-box;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap; /* supaya di layar kecil teks dan gambar bisa wrap */
+}
+
+.image {
+  width: 100%;      /* gambar memenuhi lebar card */
+  max-width: 300px; /* batas max lebar gambar supaya tidak terlalu besar di layar besar */
+  height: auto;     /* supaya proporsi gambar tetap */
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* susun gambar dan teks vertikal */
+  gap: 10px;
+  flex: 1; /* supaya teks bisa fleksibel */
+}
+
+
+.text {
+  font-size: 20px;
+  margin: 0;
+}
+
